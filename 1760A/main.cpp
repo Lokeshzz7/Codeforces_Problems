@@ -9,11 +9,11 @@ int main() {
         int a,b,c;
         cin >> a >> b >> c;
         if((a > b and a < c) or (a < b and a > c)){
-            median = b;
+            median = a;
         }else if((b > a and b < c) or (b < a and b > c)){
-            median = c;
-        }else{
             median = b;
+        }else{
+            median = c;
         }
         cout << median << endl;
     }
